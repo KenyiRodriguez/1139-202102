@@ -16,7 +16,7 @@ var apellido: String = "Rodriguez"
 // Operador unwrap
 /*
     SÓLO SE PUEDE APLICAR A UNA VARIABLE OPCIONAL
-    Esta definido por los siguientes símbolos (??)
+    Esta definido por los siguientes símb1olos (??)
     Sirve para desempaquetar el dato de una variable opcional
     En caso en el proceso se encuentre un nulo (nil) este operador te permite setear un valor por defecto.
  
