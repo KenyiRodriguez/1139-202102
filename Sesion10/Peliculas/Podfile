@@ -1,0 +1,8 @@
+
+target 'Peliculas' do
+ 
+  use_frameworks!
+
+  pod 'Firebase'
+
+end
