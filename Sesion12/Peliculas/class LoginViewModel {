@@ -1,0 +1,36 @@
+class LoginViewModel {
+	
+	private let model = LoginWS() 
+
+	func doLogin(user: String, password: String) {
+
+		if user.count == 0 {
+			bindError("Error en el usuario")
+			return
+		}
+
+		if password.count == 0
+			bindError("Error en el passord")
+			return
+		}
+
+		bindInitRequest()
+		self.model.doLogin(user: user, password: password, completionHandler: { user in
+
+			bindSuccessLogin(user)
+			bindEndRequest()
+
+		}, errorHandler: { errorMessage in
+			bindEndRequest() 
+			bindError(errorMessage)
+		})
+	}
+}
+
+no hay login
+login exitoso
+error
+
+
+
+
